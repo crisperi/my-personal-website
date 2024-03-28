@@ -1,5 +1,8 @@
+body {
+  background-color: #faf6f5;
+}
 #navigationBar {
-position: absolute;
+  /*position: absolute;
 display: flex;
 width: 1200px;
 height: 70px;
@@ -11,17 +14,49 @@ box-shadow: 0px 10px 3.5px rgba(225, 221, 219, 0.41);
 
 justify-content: space-between;
 align-items: center;
+*/
 
-
+  position: absolute;
+  display: flex;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Maximum width */
+  height: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: #fcfaf9;
+  box-shadow: 0px 10px 3.5px rgba(225, 221, 219, 0.41);
+  justify-content: space-between;
+  align-items: center;
 }
 
-#navigationBar li{
-    list-style: none;
-    margin-right: 20px;
+#navigationBar li {
+  list-style: none;
+  margin-right: 20px;
 }
 
+.nav-items {
+  display: flex;
+  margin-right: 20px;
+}
+#left-content {
+    position: absolute;
+    width: 567px;
+    height: 600px;
+    left: calc(50% - 567px/2 - 379.5px);
+    top: 110px;
+    background: url('./Images/pencil.jpg'), #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 11px 4px -3px rgba(0, 0, 0, 0.43);
+}
 
-.nav-items  {
-    display: flex;
-    margin-right: 20px;
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    #left-content {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        max-width: 567px; /* Limit maximum width */
+        left: calc(50% - 90%/2 - 379.5px); /* Adjust left position for smaller screens */
+    }
 }
