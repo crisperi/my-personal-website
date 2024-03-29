@@ -2,20 +2,6 @@ body {
   background-color: #faf6f5;
 }
 #navigationBar {
-  /*position: absolute;
-display: flex;
-width: 1200px;
-height: 70px;
-left: 57px;
-top: 0px;
-
-background: #FCFAF9;
-box-shadow: 0px 10px 3.5px rgba(225, 221, 219, 0.41);
-
-justify-content: space-between;
-align-items: center;
-*/
-
   position: absolute;
   display: flex;
   width: 100%; /* Full width */
@@ -39,24 +25,94 @@ align-items: center;
   display: flex;
   margin-right: 20px;
 }
+
+
+#right-content {
+  /* PencilPic */
+
+  display: flex;
+  width: 567px;
+  height: 600px;
+
+  background: url("./Images/pencil.jpg"), #ffffff;
+  mix-blend-mode: darken;
+  box-shadow: 10px 11px 4px -3px rgba(0, 0, 0, 0.43);
+}
 #left-content {
-    position: absolute;
-    width: 567px;
-    height: 600px;
-    left: calc(50% - 567px/2 - 379.5px);
-    top: 110px;
-    background: url('./Images/pencil.jpg'), #FFFFFF;
-    background-size: cover;
-    background-position: center;
+    float: right;
     box-shadow: 10px 11px 4px -3px rgba(0, 0, 0, 0.43);
 }
 
-/* Media Query for responsiveness */
-@media screen and (max-width: 768px) {
-    #left-content {
-        width: 90%; /* Adjust width for smaller screens */
-        height: auto; /* Allow height to adjust based on content */
-        max-width: 567px; /* Limit maximum width */
-        left: calc(50% - 90%/2 - 379.5px); /* Adjust left position for smaller screens */
-    }
-}
+
+/* right-content */
+
+position: absolute;
+width: 567px;
+height: 600px;
+left: 57px;
+top: 110px;
+
+
+
+/* right-content */
+
+position: absolute;
+width: 567px;
+height: 600px;
+left: 57px;
+top: 110px;
+
+
+
+/* PencilPic */
+
+position: absolute;
+width: 567px;
+height: 600px;
+left: 57px;
+top: 110px;
+
+background: url(kelly-sikkema-tk9RQCq5eQo-unsplash.jpg), #FFFFFF;
+mix-blend-mode: darken;
+box-shadow: 10px 11px 4px -3px rgba(0, 0, 0, 0.43);
+
+
+/* SKILLS */
+
+position: absolute;
+width: 381px;
+height: 369px;
+left: 184px;
+top: 226px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 381px;
+height: 369px;
+left: 184px;
+top: 226px;
+
+background: #121111;
+
+
+/* SKILLS I'm proficient in HTML, CSS, JavaScript, and Python. I have experience working with React, Node.js -I Designed and developed my personal portfolio website from scratch - using HTML, CSS, and JavaScript. Implemented responsive design principles to ensure optimal viewing across various devices. */
+
+position: absolute;
+width: 341px;
+height: 336px;
+left: calc(50% - 341px/2 - 345.5px);
+top: calc(50% - 336px/2 - 97px);
+
+font-family: 'Porter Sans Block';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+letter-spacing: 0.77em;
+
+color: #D2CAC9;
+
+
