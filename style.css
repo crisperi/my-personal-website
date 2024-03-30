@@ -1,5 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/porter-sans-block");
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular" );
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular");
 
 * {
   padding: 0 auto;
@@ -20,6 +20,9 @@ body {
   box-shadow: 0px 10px 3.5px rgba(225, 221, 219, 0.41);
   justify-content: space-between;
   align-items: center;
+
+  font-family: "Press Start 2P";
+  font-style: normal;
 }
 
 #navigationBar li {
@@ -28,8 +31,17 @@ body {
 }
 #navigationBar a {
   text-decoration: none;
-
 }
+#navigationBar ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.logo {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: black;
+}
+
 .nav-items {
   display: flex;
   margin-right: 20px;
@@ -49,7 +61,7 @@ body {
   width: 40vw;
   height: 58.6vh;
   left: 3vw;
-  top: 10.8vh;
+  top: 5vh;
 }
 .right-content header {
   position: absolute;
@@ -87,7 +99,7 @@ body {
   width: 39.4vw;
   height: 58.6vh;
   left: 44vw;
-  top: 10.8vh;
+  top: 5vh;
 }
 .left-content p {
   position: absolute;
@@ -105,7 +117,7 @@ body {
   overflow: auto;
 }
 
-.contact-me{
+.contact-me {
   position: absolute;
   display: flex;
   width: 84vw;
@@ -114,7 +126,7 @@ body {
   top: 72vh;
   background: #fcfaf9;
   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Press Start 2P';
+  font-family: "Press Start 2P";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -124,8 +136,7 @@ body {
 }
 
 .email {
-flex :1;
-
+  flex: 1;
 }
 .whatsapp {
   flex: 1;
@@ -134,4 +145,36 @@ flex :1;
 .contact-form {
   flex: 1;
   overflow: scroll;
+}
+.footer {
+  /* Rectangle 2 */
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+  height: 12vh;
+  left: 4vw;
+  top: 84.6vh;
+
+  background: #fcfaf9;
+  box-shadow: 0px -11px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer.copyright {
+  position: absolute;
+  width: 62.2vw;
+  height: 4vh;
+  left: 28vw;
+  top: 92vh;
+
+}
+.copyright p{
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
 }
