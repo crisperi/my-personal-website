@@ -32,48 +32,65 @@ body {
 }
 
 .mainContent {
-  position: -webkit-sticky;
-  width: 1200;
-  height: 676;
-  background-color: #df0000;
+  position:absolute;
+  width: 84vw;
+  height: 66vh;
+  left: 6vw;
+  top: 10vh;
+  background-color: rgba(202, 201, 201, 0.02);
   box-shadow: 4px -6px 4px rgba(0, 0, 0, 0.25);
 }
 .right-content img {
   position: absolute;
-  width: 567px;
-  height: 600px;
-  left: 95px;
-  top: 110px;
+  width: 40vw;
+  height: 58.6vh;
+  left: 3vw;
+  top: 10.8vh;
 }
+.right-content header {
+  position:absolute;
+  width: 14vw;
+  height: 4vh;
+  left: 22vw;
+  top: 22vh;
+  font-family: 'Porter Sans Block';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.77em;
 
+color: #FFFFFF;
+}
 .right-content p {
   position: absolute;
-  width: 342px;
-  height: 336px;
-  left: 242px;
-  top: 248px;
+  width: 24vw;
+  height: 34vh;
+  left: 18vw;
+  top: 24vh;
   font-family: "Porter Sans Block", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.77em;
+  overflow: scroll;
   color: #d2cac9;
 }
 
 .left-content img {
   position: absolute;
-  width: 567px;
-  height: 600px;
-  left: 677px;
-  top: 110px;
+  width: 39.4vw;
+  height: 58.6vh;
+  left: 44vw;
+  top: 10.8vh;
 }
 .left-content p {
   position: absolute;
-  width: 412px;
-  height: 390px;
-  left: 724px;
-  top: 224px;
+  width: 28.8vw;
+  height: 38vh;
+  left: 50.4vw;
+  top: 22vh;
   font-family: "Porter Sans Block", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -81,4 +98,5 @@ body {
   line-height: 30px;
   text-align: center;
   color: #a12c6d;
+  overflow:scroll;
 }
