@@ -61,14 +61,14 @@ body {
   width: 40vw;
   height: 58.6vh;
   left: 3vw;
-  top: 5vh;
+  top: 3vh;
 }
 .right-content header {
   position: absolute;
   width: 14vw;
   height: 4vh;
   left: 22vw;
-  top: 22vh;
+  top: 14vh;
   font-family: "Porter Sans Block";
   font-style: normal;
   font-weight: 400;
@@ -83,7 +83,7 @@ body {
   width: 24vw;
   height: 34vh;
   left: 18vw;
-  top: 24vh;
+  top: 18vh;
   font-family: "Porter Sans Block", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -99,14 +99,14 @@ body {
   width: 39.4vw;
   height: 58.6vh;
   left: 44vw;
-  top: 5vh;
+  top: 3vh;
 }
 .left-content p {
   position: absolute;
   width: 28.8vw;
   height: 38vh;
   left: 50.4vw;
-  top: 22vh;
+  top: 14vh;
   font-family: "Porter Sans Block", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@ body {
   width: 84vw;
   height: 8.4vh;
   left: 0.5vw;
-  top: 72vh;
+  top: 70vh;
   background: #fcfaf9;
   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Press Start 2P";
@@ -137,6 +137,7 @@ body {
 
 .email {
   flex: 1;
+
 }
 .whatsapp {
   flex: 1;
