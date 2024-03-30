@@ -51,7 +51,7 @@ body {
   position: absolute;
   width: 84vw;
   height: 66vh;
-  left: 6vw;
+  left: 8vw;
   top: 10vh;
   background-color: rgba(202, 201, 201, 0.02);
   box-shadow: 4px -6px 4px rgba(0, 0, 0, 0.25);
@@ -122,7 +122,7 @@ body {
   display: flex;
   width: 84vw;
   height: 8.4vh;
-  left: 2vw;
+  left: 0.5vw;
   top: 72vh;
   background: #fcfaf9;
   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
@@ -146,6 +146,31 @@ body {
   flex: 1;
   overflow: scroll;
 }
+
+.socials {
+  position: absolute;
+  left: 37.92%;
+  right: 46.67%;
+  top: 85.35%;
+  bottom: 10.74%;
+}
+.footer.copyright {
+  position: absolute;
+  width: 62.2vw;
+  height: 4vh;
+  left: 28vw;
+  top: 92vh;
+}
+.copyright p {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+}
+
 .footer {
   /* Rectangle 2 */
 
@@ -154,27 +179,9 @@ body {
   flex-direction: column;
   width: 84vw;
   height: 12vh;
-  left: 4vw;
-  top: 84.6vh;
+  left: 8.5vw;
+  top: 92vh;
 
   background: #fcfaf9;
   box-shadow: 0px -11px 4px rgba(0, 0, 0, 0.25);
-}
-
-.footer.copyright {
-  position: absolute;
-  width: 62.2vw;
-  height: 4vh;
-  left: 28vw;
-  top: 92vh;
-
-}
-.copyright p{
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 15px;
-  text-align: center;
-  color: #000000;
 }
