@@ -74,7 +74,7 @@ color: #FFFFFF;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.77em;
-  overflow: scroll;
+  overflow: hidden;
   color: #d2cac9;
 }
 
@@ -98,5 +98,5 @@ color: #FFFFFF;
   line-height: 30px;
   text-align: center;
   color: #a12c6d;
-  overflow:scroll;
+  overflow:hidden;
 }
