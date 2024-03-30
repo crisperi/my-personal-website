@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/porter-sans-block");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular" );
 
 * {
   padding: 0 auto;
@@ -25,14 +26,17 @@ body {
   list-style: none;
   margin-right: 20px;
 }
+#navigationBar a {
+  text-decoration: none;
 
+}
 .nav-items {
   display: flex;
   margin-right: 20px;
 }
 
 .mainContent {
-  position:absolute;
+  position: absolute;
   width: 84vw;
   height: 66vh;
   left: 6vw;
@@ -48,19 +52,19 @@ body {
   top: 10.8vh;
 }
 .right-content header {
-  position:absolute;
+  position: absolute;
   width: 14vw;
   height: 4vh;
   left: 22vw;
   top: 22vh;
-  font-family: 'Porter Sans Block';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-letter-spacing: 0.77em;
+  font-family: "Porter Sans Block";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.77em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 .right-content p {
   position: absolute;
@@ -74,7 +78,7 @@ color: #FFFFFF;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.77em;
-  overflow: hidden;
+  overflow: auto;
   color: #d2cac9;
 }
 
@@ -98,5 +102,36 @@ color: #FFFFFF;
   line-height: 30px;
   text-align: center;
   color: #a12c6d;
-  overflow:hidden;
+  overflow: auto;
+}
+
+.contact-me{
+  position: absolute;
+  display: flex;
+  width: 84vw;
+  height: 8.4vh;
+  left: 2vw;
+  top: 72vh;
+  background: #fcfaf9;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+.email {
+flex :1;
+
+}
+.whatsapp {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+  overflow: scroll;
 }

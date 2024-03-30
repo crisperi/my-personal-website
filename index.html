@@ -8,18 +8,19 @@
       href="https://fonts.cdnfonts.com/css/porter-sans-block"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav id="navigationBar">
       <ul>
-        <a href="" class="logo">Edian</a>
+        <a href="./index.html" class="logo">Edian</a>
       </ul>
       <ul class="nav-items">
-        <li><a href="#skills"></a>SKILLS</li>
-        <li><a href="#projects"></a>PROJECTS</li>
-        <li><a href="#about"></a>ABOUT</li>
-        <li><a href="#contact"></a>CONTACT</li>
+        <li><a href="./skills.html">SKILLS</a></li>
+        <li><a href="./projects.html">PROJECTS</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
     </nav>
     <section class="mainContent">
@@ -27,11 +28,11 @@
         <img src="./Images/pencil.jpg" alt="Pencil" />
         <header class="content-header">SKIlLS</header>
         <p class="centered">
-          I'm proficient in HTML, CSS, JavaScript, and Python.
-          I have experience working with React, Node.js -I Designed and developed my
-          personal portfolio website from scratch - using HTML, CSS, and
-          JavaScript. 
-          Implemented responsive design principles to ensure optimal viewing across various devices.
+          I'm proficient in HTML, CSS, JavaScript, and Python. I have experience
+          working with React, Node.js -I Designed and developed my personal
+          portfolio website from scratch - using HTML, CSS, and JavaScript.
+          Implemented responsive design principles to ensure optimal viewing
+          across various devices.
         </p>
       </div>
       <div class="left-content">
@@ -46,13 +47,21 @@
         </p>
       </div>
 
-      <div class="contact-me">
-
-      </div>
+      <section class="contact-me">
+        <div class="email">KNOWEDIAN@GMAIL.COM</div>
+        <div class="whatsapp"> WHATSAPP:0727319943</div>
+        <form class="contact-form"> 
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="number" required />
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </>
     </section>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
 
     <script src="script.js"></script>
   </body>
