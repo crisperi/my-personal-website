@@ -21,8 +21,8 @@
     />
   </head>
   <body>
-    <nav id="navigationBar">
-      <ul>
+    <nav class="navigationBar">
+      <ul class ="logo">
         <a href="./index.html" class="logo">Edian</a>
       </ul>
       <ul class="nav-items">
@@ -32,11 +32,13 @@
         <li><a href="./contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <section class="mainContent">
+    <div class="mainContent">
       <div class="right-content">
-        <img src="./Images/pencil.jpg" alt="Pencil" />
-        <header class="content-header">SKIlLS</header>
-        <p class="centered">
+        
+        
+        <div class="centered">
+          <header class="content-header">SKILLS</header>
+          <p>
           I'm proficient in HTML, CSS, JavaScript, and Python. I have experience
           working with React, Node.js -I Designed and developed my personal
           portfolio website from scratch - using HTML, CSS, and JavaScript.
@@ -44,21 +46,22 @@
           across various devices.
         </p>
       </div>
+      </div>
       <div class="left-content">
-        <img
-          src="./Images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
-          alt="Computer"
-        />
-        <p class="centered2">
+ 
+        
+        <div class="centered">
+          <header class="content-header">ABOUT</header>
+          <p>
           coder--w: Programmer by day, imagination architect by night. I love
           pushing boundaries with tech & gaming, fueling my creativity with a
           dash of weird humor and meditation.
         </p>
+        </div>
       </div>
-
-      <section class="contact-me">
-        <div class="email">KNOWEDIAN@GMAIL.COM</div>
-        <div class="whatsapp">WHATSAPP:0727319943</div>
+    </div>
+      <div class="contact-me">
+        <div class =" form-header">Contact-Form :</div>
         <form class="contact-form">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
@@ -66,10 +69,11 @@
           <label for="number">Number:</label>
           <input type="number" id="number" name="number" required />
           <br /><br />
-          <input type="submit" value="Submit" />
+         <button class="btn "><input type="submit" value="Submit" />
+        </button>
         </form>
-      </section>
-    </section>
+      </div>
+    </div>
     <footer class="footer">
       <div class="socials">
         <i class="fa-brands fa-twitter"></i>

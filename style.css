@@ -2,187 +2,156 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular");
 
 * {
-  padding: 0 auto;
+  padding: 0 ;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-  background-color: #faf6f5;
+  background-color: #000;
+  font-family:  "Press Start 2P",sans-serif;
+
 }
-#navigationBar {
-  position: absolute;
-  display: flex;
+
+p,a,li,label,input{
+ color: rgba(25, 225, 8, 1);
+}
+
+header{
+  color: rgba(25, 225, 8, 1);
+  text-decoration: underline black;
+  padding: 10px;
+}
+
+.navigationBar {
+  display:flex;
+  justify-content: center;
+  align-items: center ;
+
   width: 100%; /* Full width */
-  max-width: 1200px; /* Maximum width */
-  height: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  background: #fcfaf9;
-  box-shadow: 0px 10px 3.5px rgba(225, 221, 219, 0.41);
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: "Press Start 2P";
-  font-style: normal;
+  padding: 20px;
+  background-color: #000;
+  box-shadow: 4px -6px 4px rgba(78, 207, 27, 0.466);
+  
 }
 
-#navigationBar li {
-  list-style: none;
-  margin-right: 20px;
-}
-#navigationBar a {
-  text-decoration: none;
-}
-#navigationBar ul {
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
 .logo {
-  font-family: "Press Start 2P";
-  font-size: 20px;
-  color: black;
+  justify-content: flex-end;
+  font-size: 24px;
+  color: rgba(25, 225, 8, 1);
+  text-decoration: none;
+  padding: 20px;
+
 }
 
 .nav-items {
   display: flex;
-  margin-right: 20px;
+  gap: 20px;
+
+
 }
+.nav-items li {
+  list-style: none;
+}
+.nav-items a{
+  text-decoration: none;
+}
+
 
 .mainContent {
-  position: absolute;
-  width: 84vw;
-  height: 66vh;
-  left: 8vw;
-  top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60vh;
+  gap: 10px;
+  margin :20px;                 
   background-color: rgba(202, 201, 201, 0.02);
-  box-shadow: 4px -6px 4px rgba(0, 0, 0, 0.25);
-}
-.right-content img {
-  position: absolute;
-  width: 40vw;
-  height: 58.6vh;
-  left: 3vw;
-  top: 3vh;
-}
-.right-content header {
-  position: absolute;
-  width: 14vw;
-  height: 4vh;
-  left: 22vw;
-  top: 14vh;
-  font-family: "Porter Sans Block";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0.77em;
-
-  color: #ffffff;
-}
-.right-content p {
-  position: absolute;
-  width: 24vw;
-  height: 34vh;
-  left: 18vw;
-  top: 18vh;
-  font-family: "Porter Sans Block", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.77em;
-  overflow: auto;
-  color: #d2cac9;
+  box-shadow: 4px -6px 4px rgba(78, 207, 27, 0.466);
 }
 
-.left-content img {
-  position: absolute;
-  width: 39.4vw;
-  height: 58.6vh;
-  left: 44vw;
-  top: 3vh;
+ 
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-size: cover;
+  overflow: hidden;
 }
-.left-content p {
-  position: absolute;
-  width: 28.8vw;
-  height: 38vh;
-  left: 50.4vw;
-  top: 14vh;
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  
+  background-image: url("Images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.right-content p{
+  background-color: rgba(0, 0, 0, 0.5);;
+}
+.right-content,
+.left-content p {  /* Style the paragraph within left-content */
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: "Porter Sans Block", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
   text-align: center;
-  color: #a12c6d;
-  overflow: auto;
 }
 
 .contact-me {
-  position: absolute;
-  display: flex;
-  width: 84vw;
-  height: 8.4vh;
-  left: 0.5vw;
-  top: 70vh;
-  background: #fcfaf9;
-  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
-  text-align: center;
-  overflow: auto;
-}
-
-.email {
-  flex: 1;
-
-}
-.whatsapp {
-  flex: 1;
-}
-
-.contact-form {
-  flex: 1;
-  overflow: scroll;
-}
-
-.socials {
-  position: absolute;
-  left: 37.92%;
-  right: 46.67%;
-  top: 85.35%;
-  bottom: 10.74%;
-}
-.footer.copyright {
-  position: absolute;
-  width: 62.2vw;
-  height: 4vh;
-  left: 28vw;
-  top: 92vh;
-}
-.copyright p {
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 15px;
-  text-align: center;
-  color: #000000;
-}
-
-.footer {
-  /* Rectangle 2 */
-
-  position: absolute;
   display: flex;
   flex-direction: column;
-  width: 84vw;
-  height: 12vh;
-  left: 8.5vw;
-  top: 92vh;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(202, 201, 201, 0.02);
+  box-shadow:4px -6px 4px rgba(78, 207, 27, 0.466);
+}
 
-  background: #fcfaf9;
-  box-shadow: 0px -11px 4px rgba(0, 0, 0, 0.25);
+.contact-me .form-header {
+  font-size: 24px;
+  gap: 20px;
+  width: 50%;
+  color: rgba(25, 225, 8, 1);
+}
+.contact-form {
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+  overflow: hidden;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(70, 160, 75, 0.02);
+
+} 
+.contact-form label {
+  font-size: 20px;
+  color: rgba(25, 225, 8, 1);
+}
+
+.contact-form input {
+  background-color: rgba(70, 160, 75, 0.02);
+  color: rgba(25, 225, 8, 1);
+
+  box-shadow: 4px -6px 4px rgba(78, 207, 27, 0.466);
+}
+.btn {
+  background-color: #000;
+  box-shadow:4px -6px 4px rgba(78, 207, 27, 0.466);
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(202, 201, 201, 0.02);
+  box-shadow: 4px -6px 4px rgba(78, 207, 27, 0.466);
 }
