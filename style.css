@@ -11,6 +11,13 @@ body {
   font-family:  "Press Start 2P",sans-serif;
 margin: auto;
   width: 80%;
+  height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main-and-content {
+  flex-grow: 1;
 }
 
 p,a,li,label,input{
@@ -75,6 +82,8 @@ header{
   gap: 10px;
   padding: 20px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: clip;
 }
 
 .left-content {
@@ -145,11 +154,11 @@ header{
 }
 
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  height: 100vh;
   padding: 20px;
   background-color: rgba(202, 201, 201, 0.02);
   box-shadow: 0px -11px 4px rgba(78, 207, 27, 0.3);
