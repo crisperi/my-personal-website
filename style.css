@@ -26,6 +26,7 @@ header{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   padding: 20px;
   background-color: #000;
 
@@ -101,23 +102,22 @@ header{
 .contact-me {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
   box-shadow:0px 4px 4px rgba(78, 207, 27, 0.8);
 }
 
 .contact-me .form-header {
-
+  display: flex;
+  flex-direction: column;
   font-size: 24px;
   gap: 20px;
-  width: 50%;
   color: rgba(25, 225, 8, 1);
 }
 .contact-form {
   display: flex;
   flex-direction: row ;
   justify-content: center;
-  width: 100%;
   align-self: center;
   overflow: hidden;
   gap: 10px;
@@ -151,3 +151,54 @@ footer {
   background-color: rgba(202, 201, 201, 0.02);
   box-shadow: 0px -11px 4px rgba(78, 207, 27, 0.3);
 }
+
+@media (max-width: 768px) {
+  .mainContent {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+  .navigationBar{
+    flex-direction: column;
+    align-items:  centre;
+  
+  }
+  .nav-items{
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .contact-me{
+  flex-direction: column;
+  align-items: center
+  }
+
+  .form-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:20px;
+    width: 80%;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  font-size: 12px;
+  width: 100%;
+  
+  }
+ 
+  .footer { 
+    flex-direction: column;
+    align-items: center;
+   width: 100%;
+   line-height: 5px;
+
+  
+  }
+  .copyright {
+    text-align: center;
+  }
+  }
