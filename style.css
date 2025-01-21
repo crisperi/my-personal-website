@@ -150,10 +150,11 @@ header{
   box-shadow: 4px -6px 4px rgba(78, 207, 27, 0.466);
 }
 .btn {
-  width: auto;
-  height: auto;
-  background-color: #000;
-  box-shadow:4px -6px 4px rgba(78, 207, 27, 0.466);
+  width: 55px;
+  height: 25px;
+  background-color: rgba(70, 160, 75, 0.02);
+  color: rgba(25, 225, 8, 1);
+  box-shadow: 2px -4px 2px rgba(78, 207, 27, 0.466);
 }
 
 
