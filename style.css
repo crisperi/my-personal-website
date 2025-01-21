@@ -21,7 +21,7 @@ margin: auto;
   flex-grow: 1;
 }
 
-p,a,li,label,input{
+p,a,li,label,input ,span{
  color: rgba(25, 225, 8, 1);
 }
 
@@ -44,7 +44,7 @@ header{
 }
 
 .logo {
-
+  float: left;
   font-size: 24px;
   color: rgba(25, 225, 8, 1);
   text-decoration: none;
