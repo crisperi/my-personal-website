@@ -191,6 +191,7 @@ header{
   .nav-items{
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .logo{
     font-size: 18px;
